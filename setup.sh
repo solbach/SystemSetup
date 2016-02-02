@@ -15,6 +15,7 @@ sudo apt-get install -y imagemagick
 sudo apt-get install -y htop
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 sudo apt-get install -y oracle-java8-installer
+sudo apt-get install -y oracle-java8-set-default
 
 # ROS Indigo
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
