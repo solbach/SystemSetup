@@ -1,10 +1,10 @@
 # Ubuntu Stuff
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
-sudo add-apt-repository ppa:alexey-ivanov/qtcreator
-sudo apt-add-repository ppa:indicator-multiload/stable-daily
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator
+sudo apt-add-repository -y ppa:indicator-multiload/stable-daily
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install -y indicator-multiload
 sudo apt-get install -y sublime-text-installer
