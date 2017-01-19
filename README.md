@@ -1,5 +1,2 @@
-# System Setup
-This script installs VIM, qtcreator, System-Load-Indicator, ... and ROS Indigo
-
-## To Do
-* Better Feedback (commandline feedback suppression and write own feedback)
+# System Setup for Ubuntu 14.04
+This script installs VIM, qtcreator, Java, System-Load-Indicator, (check .sh file for more) ... and **ROS Indigo**
