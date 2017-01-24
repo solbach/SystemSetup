@@ -10,6 +10,7 @@ sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) pa
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get install -y skype
+sudo apt-get install -y okular
 sudo apt-get install -y blender
 sudo apt-get install -y nvidia-370
 sudo apt-get install -y --allow-unauthenticated owncloud-client
