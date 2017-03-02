@@ -10,7 +10,7 @@ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/d
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo dpkg --add-architecture i386
 sudo apt-get update
-sudo apt-get install -y texlive-full 
+sudo apt-get install -y texlive-full
 sudo apt-get install -y biblatex
 sudo apt-get install -y latex-beamer
 sudo apt-get install -y impressive
@@ -34,6 +34,7 @@ sudo apt-get install -y system-config-lvm
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 sudo apt-get install -y oracle-java8-installer
 sudo apt-get install -y oracle-java8-set-default
+sudo apt-get install -y doxygen*
 
 # ROS Kinetic
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
