@@ -36,6 +36,7 @@ echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | su
 sudo apt-get install -y oracle-java8-installer
 sudo apt-get install -y oracle-java8-set-default
 sudo apt-get install -y doxygen*
+sudo apt-get install -y openssh-server
 
 # ROS Kinetic
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
