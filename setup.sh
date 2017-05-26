@@ -16,6 +16,7 @@ sudo apt-get install -y texlive-full
 sudo apt-get install -y biblatex
 sudo apt-get install -y latex-beamer
 sudo apt-get install -y impressive
+sudo apt-get install -y unrar
 sudo apt-get install -y skype
 sudo apt-get install -y okular
 sudo apt-get install -y samba
