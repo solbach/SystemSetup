@@ -28,6 +28,7 @@ sudo apt-get install -y unity-tweak-tool
 sudo apt-get install -y compizconfig-settings-manager
 sudo apt-get install -y sublime-text-installer
 sudo apt-get install -y vim
+sudo apt-get install -y gparted
 sudo apt-get install -y smbclient
 sudo apt-get install -y imagemagick
 sudo apt-get install -y htop
