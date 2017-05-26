@@ -5,8 +5,10 @@ sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:thomas-schiex/blender
-sudo add-apt-repository -y ppa:texlive-backports/ppa
+sudo add-apt-repository -y ppa:jonathonf/texlive
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud-client.list"
+wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_16.04/Release.key
+sudo apt-key add - < Release.key
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo dpkg --add-architecture i386
 sudo apt-get update
