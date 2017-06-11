@@ -6,12 +6,14 @@ sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:thomas-schiex/blender
 sudo add-apt-repository -y ppa:jonathonf/texlive
+sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud-client.list"
 wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_16.04/Release.key
 sudo apt-key add - < Release.key
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo dpkg --add-architecture i386
 sudo apt-get update
+sudo apt-get install -y grub-customizer
 sudo apt-get install -y texlive-full
 sudo apt-get install -y biblatex
 sudo apt-get install -y latex-beamer
@@ -53,3 +55,11 @@ rosdep update
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 sudo apt-get install -y python-rosinstall
+
+# OPENCV DEPENDENCIES (3.1)
+sudo apt-get install -y build-essential cmake git
+sudo apt-get install -y build-essential pkg-config unzip ffmpeg qtbase5-dev python-dev python3-dev python-numpy python3-numpy
+sudo apt-get install -y libopencv-dev libgtk-3-dev libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev
+sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+sudo apt-get install -y libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev
+sudo apt-get install -y libvorbis-dev libxvidcore-dev v4l-utils
