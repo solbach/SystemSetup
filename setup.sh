@@ -17,7 +17,6 @@ sudo apt-get update
 sudo apt-get install -y pdftk
 sudo apt-get install -y handbrake-gtk 
 sudo apt-get install -y handbrake-cli
-=======
 sudo apt-get install -y grub-customizer
 sudo apt-get install -y texlive-full
 sudo apt-get install -y biblatex
