@@ -6,12 +6,16 @@ sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:thomas-schiex/blender
 sudo add-apt-repository -y ppa:jonathonf/texlive
+sudo add-apt-repository -y ppa:stebbins/handbrake-releases
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud-client.list"
 wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_16.04/Release.key
 sudo apt-key add - < Release.key
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo dpkg --add-architecture i386
 sudo apt-get update
+sudo apt-get install -y pdftk
+sudo apt-get install -y handbrake-gtk 
+sudo apt-get install -y handbrake-cli
 sudo apt-get install -y texlive-full
 sudo apt-get install -y biblatex
 sudo apt-get install -y latex-beamer
