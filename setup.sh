@@ -1,5 +1,5 @@
 # Ubuntu Stuff
-sudo apt-get -y upgrade
+sudo apt -y full-upgrade
 sudo apt-get -y dist-upgrade
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:webupd8team/java
