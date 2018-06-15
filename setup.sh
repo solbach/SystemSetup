@@ -28,7 +28,7 @@ sudo apt-get install -y okular
 sudo apt-get install -y samba
 sudo apt-get install -y blender
 sudo apt-get install -y openvpn
-sudo apt-get install -y nvidia-370
+sudo apt-get install -y nvidia-390
 sudo apt-get install -y --allow-unauthenticated owncloud-client
 sudo apt-get install -y indicator-multiload
 sudo apt-get install -y unity-tweak-tool
