@@ -1,7 +1,6 @@
 # Ubuntu Stuff
 sudo apt -y full-upgrade
 sudo apt-get -y dist-upgrade
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:thomas-schiex/blender
@@ -11,6 +10,9 @@ sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud-client.list"
 wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_16.04/Release.key
 sudo apt-key add - < Release.key
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo dpkg --add-architecture i386
 sudo apt-get update
@@ -18,6 +20,7 @@ sudo apt-get install -y pdftk
 sudo apt-get install -y handbrake-gtk 
 sudo apt-get install -y handbrake-cli
 sudo apt-get install -y grub-customizer
+sudo apt-get install -y sublime-text
 sudo apt-get install -y texlive-full
 sudo apt-get install -y biblatex
 sudo apt-get install -y latex-beamer
@@ -33,7 +36,6 @@ sudo apt-get install -y --allow-unauthenticated owncloud-client
 sudo apt-get install -y indicator-multiload
 sudo apt-get install -y unity-tweak-tool
 sudo apt-get install -y compizconfig-settings-manager
-sudo apt-get install -y sublime-text-installer
 sudo apt-get install -y vim
 sudo apt-get install -y gparted
 sudo apt-get install -y smbclient
