@@ -3,7 +3,6 @@ sudo apt -y full-upgrade
 sudo apt-get -y dist-upgrade
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
-sudo add-apt-repository -y ppa:thomas-schiex/blender
 sudo add-apt-repository -y ppa:jonathonf/texlive
 sudo add-apt-repository -y ppa:stebbins/handbrake-releases
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
@@ -23,16 +22,13 @@ sudo apt install -y biblatex
 sudo apt install -y latex-beamer
 sudo apt install -y impressive
 sudo apt install -y unrar
-sudo apt install -y skype
 sudo apt install -y okular
 sudo apt install -y samba
 sudo apt install -y blender
 sudo apt install -y openvpn
-sudo apt install -y nvidia-430
-sudo apt install -y --allow-unauthenticated owncloud-client
-sudo apt install -y indicator-multiload
 sudo apt install -y unity-tweak-tool
 sudo apt install -y compizconfig-settings-manager
+sudo apt-get install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
 sudo apt install -y vim
 sudo apt install -y gparted
 sudo apt install -y smbclient
@@ -48,6 +44,8 @@ sudo apt install -y doxygen*
 sudo apt install -y openssh-server
 sudo apt install -y gparted
 sudo apt install -y filezilla
+sudo apt install -y freecad
+sudo apt install -y tmux
 
 # ROS Melodic
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
