@@ -2,6 +2,7 @@
 This script installs VIM, Java, System-Load-Indicator, (check .sh file for more) ... and **ROS Melodic**
 
 ## Further Notes
+* CPU power manager extension for shell integration: [link](https://extensions.gnome.org/extension/945/cpu-power-manager/)
 * System Monitor Tool for Gnome (Ubuntu >17): [link](https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet)
 * NVIDIA driver is not being installed anymore automatically. Instead use the packaged driver with CUDA: [link](https://developer.nvidia.com/cuda-downloads)
 * Jetbrains toolbox: [link](https://www.jetbrains.com/toolbox/app/)

@@ -2,7 +2,7 @@
 sudo apt -y full-upgrade
 sudo apt-get -y dist-upgrade
 sudo add-apt-repository -y ppa:webupd8team/java
-sudo add-apt-repository -y ppa:graphics-drivers/ppa
+#sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:jonathonf/texlive
 sudo add-apt-repository -y ppa:stebbins/handbrake-releases
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
@@ -12,6 +12,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo dpkg --add-architecture i386
 sudo apt update
+sudo apt install -y chrome-gnome-shell
 sudo apt install -y pdftk
 sudo apt install -y handbrake-gtk 
 sudo apt install -y handbrake-cli
