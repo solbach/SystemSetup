@@ -13,6 +13,7 @@ sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) pa
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install -y chrome-gnome-shell
+sudo apt-get install indicator-multiload
 sudo apt install -y pdftk
 sudo apt install -y handbrake-gtk 
 sudo apt install -y handbrake-cli
